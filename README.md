@@ -6,6 +6,10 @@ Welcome to my personal Portfolio Website! This is a fully responsive website bui
 
 ---
 
+# Portfolio images
+<img width="1627" height="732" alt="Screenshot 2026-01-13 164124" src="https://github.com/user-attachments/assets/7dc48932-0b1f-4e17-b622-ea527c59b630" />
+
+
 ## ✨ Features
 
 - **Hero Section**  
