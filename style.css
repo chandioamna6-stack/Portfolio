@@ -1,3 +1,8 @@
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -448,7 +453,13 @@ header {
 }
 
 .home {
-  margin: 160px 200px;
+    padding: 160px 20px;
+margin: 0 auto;
+max-width: 1200px;
+
+
+  
+
   color: #f2f2f2;
 }
 
@@ -590,7 +601,10 @@ hr {
 
 /* ===== PROJECT SECTION ===== */
 .project {
-    margin: 160px 200px;
+    padding: 160px 20px;
+margin: 0 auto;
+max-width: 1200px;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -720,7 +734,10 @@ hr {
 }
 
 .about {
-    margin: 160px 200px;
+    padding: 160px 20px;
+margin: 0 auto;
+max-width: 1200px;
+
     font-family: "Poppins", sans-serif;
     color: #f2f2f2;
 }
@@ -971,7 +988,10 @@ hr {
 }
 
 .services {
-    margin: 160px 200px;
+    padding: 160px 20px;
+margin: 0 auto;
+max-width: 1200px;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1135,6 +1155,8 @@ hr {
 
 /* RESPONSIVE */
 @media (max-width: 900px) {
+
+  /* CONTACT (your existing code – unchanged) */
   .contact-content {
     grid-template-columns: 1fr;
     gap: 50px;
@@ -1146,6 +1168,57 @@ hr {
   }
 
   .social-links {
+    justify-content: center;
+  }
+
+  /* ===== GLOBAL MOBILE FIXES ===== */
+
+  /* Stack layouts */
+  .content,
+  .home-container,
+  .about-info2 {
+    flex-direction: column;
+    gap: 24px;
+    text-align: center;
+  }
+
+  /* Section spacing */
+  .home,
+  .project,
+  .about,
+  .services {
+    padding: 100px 16px;
+    margin: 0 auto;
+  }
+
+  /* Text sizes */
+  .info-home h1 { font-size: 36px; }
+  .info-home h3 { font-size: 22px; }
+
+  /* Images */
+  .home img {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  /* Stats */
+  .stats {
+    flex-direction: column;
+  }
+
+  /* Buttons */
+  .buttons,
+  .btnn {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  /* Navigation */
+  .ul-list {
+    gap: 1rem;
+    padding: 10px 16px;
+    flex-wrap: wrap;
     justify-content: center;
   }
 }
