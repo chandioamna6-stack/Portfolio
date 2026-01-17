@@ -1162,6 +1162,10 @@ max-width: 1200px;
     gap: 50px;
     text-align: center;
   }
+     /* FIX PROJECT CARDS ON MOBILE */
+  .projects-container {
+    grid-template-columns: 1fr;
+  }
 
   .contact-item {
     justify-content: center;
@@ -1222,4 +1226,5 @@ max-width: 1200px;
     justify-content: center;
   }
 }
+
 
