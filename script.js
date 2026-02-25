@@ -103,3 +103,37 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
+const roles = [
+  "Frontend Developer",
+  "Full Stack Developer",
+  "Backend Developer"
+];
+
+const typingText = document.getElementById("typing-text");
+
+let roleIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+
+function typeEffect() {
+  const currentRole = roles[roleIndex];
+  
+  if (isDeleting) {
+    typingText.textContent = currentRole.substring(0, charIndex--);
+  } else {
+    typingText.textContent = currentRole.substring(0, charIndex++);
+  }
+
+  if (!isDeleting && charIndex === currentRole.length + 1) {
+    setTimeout(() => isDeleting = true, 1000); // pause before deleting
+  } 
+  else if (isDeleting && charIndex === 0) {
+    isDeleting = false;
+    roleIndex = (roleIndex + 1) % roles.length;
+  }
+
+  setTimeout(typeEffect, isDeleting ? 50 : 100);
+}
+
+typeEffect();
