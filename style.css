@@ -1226,4 +1226,16 @@ max-width: 1200px;
     justify-content: center;
   }
 }
+.cursor {
+  display: inline-block;
+  margin-left: 5px;
+  animation: blink 0.7s infinite;
+  color: #00bcd4; /* change to your theme color */
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
 
